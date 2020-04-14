@@ -1,0 +1,1 @@
+<view><view>我是one页面</view><button type="primary" data-event-opts="{{[['tap',[['toPath',['$event']]]]]}}" bindtap="__e">toIndex</button></view>

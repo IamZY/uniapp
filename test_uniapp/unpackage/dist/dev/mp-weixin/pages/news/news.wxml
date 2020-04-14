@@ -1,1 +1,1 @@
-<view></view>
+<view><view hidden="{{!(false)}}">v-show</view><block wx:if="{{false}}"><view>v-if</view></block><view>xxx</view><button type="primary" size="mini" data-event-opts="{{[['tap',[['uploadPic',['$event']]]]]}}" bindtap="__e">上传图片</button></view>

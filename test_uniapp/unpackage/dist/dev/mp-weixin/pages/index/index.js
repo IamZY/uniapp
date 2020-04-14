@@ -109,6 +109,17 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var g0 = "ntuzy".indexOf("n")
+  var g1 = "我爱北京天安门".slice(0, 1)
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        g0: g0,
+        g1: g1
+      }
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -140,26 +151,81 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var test = function test() {__webpack_require__.e(/*! require.ensure | components/test */ "components/test").then((function () {return resolve(__webpack_require__(/*! ../../components/test.vue */ 35));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
-      title: 'Hello uni-app' };
+      // title: 'Hello uni-app'
+      // msg: 'ntuzy'
+      msg: "lili",
+      names: ['a', 'b', 'c', 'd'],
+      currentIndex: 0 };
+
 
   },
+  components: {
+    test: test },
+
   onLoad: function onLoad() {
-
+    // uni.$on("testEmit",(rel)=>{
+    // 	console.log(rel)
+    // })
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    setIndexItem: function setIndexItem(index) {
+      this.currentIndex = index;
+    },
+    toPath: function toPath() {
+      // uni.switchTab({
+      // 	url: "../news/news"
+      // })
+      uni.navigateTo({
+        url: "../one/one?name=ntuzy" });
+
+    }
+    // testEvent(rel) {
+    // 	console.log(rel)
+    // }
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 21 */
