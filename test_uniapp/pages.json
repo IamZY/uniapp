@@ -1,6 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		    "path" : "pages/test/test",
+		    "style" : {
+				"navigationBarTitleText": "测试"
+			}
+		},
+		{
             "path" : "pages/news/news",
             "style" : {
 				"navigationBarTitleText": "新闻"
@@ -14,12 +20,6 @@
 			}
 		}
         ,{
-            "path" : "pages/test/test",
-            "style" : {
-				"navigationBarTitleText": "测试"
-			}
-        }
-        ,{
             "path" : "pages/one/one",
             "style" : {}
         }
@@ -29,17 +29,19 @@
 	    "selectedColor": "#3cc51f",
 	    "borderStyle": "black",
 	    "backgroundColor": "#ffffff",
-	    "list": [{
+	    "list": [
+		{
+		    "pagePath": "pages/test/test",
+		    "text": "测试"
+		},
+		{
 	        "pagePath": "pages/news/news",
 	        "text": "新闻"
 	    }, 
 		{
 		    "pagePath": "pages/index/index",
 		    "text": "首页"
-		},{
-	        "pagePath": "pages/test/test",
-	        "text": "测试"
-	    }]
+		}]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

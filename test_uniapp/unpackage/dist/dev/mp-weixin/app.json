@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/test/test",
     "pages/news/news",
     "pages/index/index",
-    "pages/test/test",
     "pages/one/one"
   ],
   "subPackages": [],
@@ -20,16 +20,16 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
+        "pagePath": "pages/test/test",
+        "text": "测试"
+      },
+      {
         "pagePath": "pages/news/news",
         "text": "新闻"
       },
       {
         "pagePath": "pages/index/index",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/test/test",
-        "text": "测试"
       }
     ]
   },
